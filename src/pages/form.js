@@ -14,6 +14,9 @@ export const Form = () => {
     setCgpa,
     setHscmarks,
     setGraduation,
+    setActivities,
+    setAchievements,
+    setSkills,
   } = useContext(AppContext);
 
   const handleFullname = (e) => {
@@ -43,6 +46,16 @@ export const Form = () => {
   const handlegraduation = (e) => {
     setGraduation(e.target.value);
   };
+  const handleskills = (e) => {
+    setSkills(e.target.value);
+  };
+  const handleactivities = (e) => {
+    setActivities(e.target.value);
+  };
+  const handleachievements = (e) => {
+    setAchievements(e.target.value);
+  };
+
   const navigate = useNavigate();
 
   const onsubmit = () => {
@@ -173,6 +186,36 @@ export const Form = () => {
                     type="text"
                     placeholder="Upload CV/Resume"
                     required
+                  />
+                </div>
+                <div className="input-field">
+                  <label>Skills</label>
+                  <input
+                    id="drop_zone"
+                    ondrop="dropHandler(event)"
+                    type="text"
+                    onChange={handleskills}
+                    placeholder="Mention Skills"
+                  />
+                </div>
+                <div className="input-field">
+                  <label>Extracurricular Activities</label>
+                  <input
+                    id="drop_zone"
+                    ondrop="dropHandler(event)"
+                    type="text"
+                    onChange={handleactivities}
+                    placeholder="Mention "
+                  />
+                </div>
+                <div className="input-field">
+                  <label>Achievements</label>
+                  <input
+                    id="drop_zone"
+                    ondrop="dropHandler(event)"
+                    type="text"
+                    onChange={handleachievements}
+                    placeholder="Mention  Achievments"
                   />
                 </div>
               </div>

@@ -8,7 +8,8 @@ export const Scholarships = () => {
   // const [course, setCourse] = useState("");
   const [search, setSearch] = useState("");
 
-  const { country, setCountry, course, setCourse } = useContext(AppContext);
+  const { country, setCountry, course, setCourse, cgpa, setCgpa } =
+    useContext(AppContext);
 
   const handleCountrychange = (e) => {
     setCountry(e.target.value);
@@ -70,10 +71,10 @@ export const Scholarships = () => {
                   <option value="fullyf">Fully Funded</option>
                 </select>
 
-                <button className="nextBtn">
+                {/* <button className="nextBtn btn">
                   <span className="btnText">Generate</span>
                   <i className="uil uil-navigator"></i>
-                </button>
+  </button> */}
               </div>
             </div>
           </div>
@@ -103,7 +104,11 @@ export const Scholarships = () => {
                 // .filter((item) => {
                 //   return course.toLowerCase() === ""
                 //     ? item
-                //     : item.degrees.includes(course);
+                //     : item.degrees.includes(
+                //         forEach((element) => { slice(0, coiurse.lentgh, 1)
+                //           course in element;
+                //         })
+                //       );
                 // })
                 .map((item) => (
                   // <Data data={data} />

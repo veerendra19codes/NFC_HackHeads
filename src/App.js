@@ -24,6 +24,9 @@ function App() {
   const [graduation, setGraduation] = useState("2024");
   const [country, setCountry] = useState("");
   const [course, setCourse] = useState("");
+  const [skills, setSkills] = useState("");
+  const [activities, setActivities] = useState("");
+  const [achievements, setAchievements] = useState("");
 
   return (
     <div className="App">
@@ -53,6 +56,12 @@ function App() {
           setCountry,
           course,
           setCourse,
+          skills,
+          setSkills,
+          activities,
+          setActivities,
+          achievements,
+          setAchievements,
         }}
       >
         <Router>
