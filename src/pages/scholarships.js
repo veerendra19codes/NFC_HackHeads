@@ -23,6 +23,11 @@ export const Scholarships = () => {
     // console.log(course);
   };
 
+  const handleadd = () => {
+    alert("Added to preference list");
+    // const _id=e.FIELD1;
+  };
+
   return (
     <div className="scholarshipsbody">
       <header className="title">Recommendations</header>
@@ -92,6 +97,7 @@ export const Scholarships = () => {
                 <div className="th">Funds</div>
                 <div className="th">Date</div>
                 <div className="th">Location</div>
+                <div className="th">Add</div>
               </div>
             </div>
 
@@ -118,6 +124,9 @@ export const Scholarships = () => {
                     <div className="td">{item.funds}</div>
                     <div className="td">{item.date}</div>
                     <div className="td">{item.location}</div>
+                    <button onClick={handleadd} className="preference btn">
+                      Add to Preference
+                    </button>
                   </div>
                 ))}
             </div>

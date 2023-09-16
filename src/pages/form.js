@@ -77,7 +77,7 @@ export const Form = () => {
               {/* <span className="title personal">Personal Details</span> */}
               <div className="fields">
                 <div className="input-field">
-                  <label>Full Name</label>
+                  <label>Full Name*</label>
                   <input
                     type="text"
                     placeholder="Enter Your Name"
@@ -86,7 +86,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Age</label>
+                  <label>Age*</label>
                   <input
                     type="number"
                     placeholder="Enter Age"
@@ -95,7 +95,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Gender</label>
+                  <label>Gender*</label>
                   <input
                     type="text"
                     placeholder="Enter Gender"
@@ -104,7 +104,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Address</label>
+                  <label>Address*</label>
                   <input
                     type="text"
                     onChange={handleaddress}
@@ -113,7 +113,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Phone</label>
+                  <label>Phone*</label>
                   <input
                     type="number"
                     placeholder="Enter Phone Number"
@@ -122,7 +122,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Email</label>
+                  <label>Email*</label>
                   <input
                     type="text"
                     placeholder="Enter Email"
@@ -137,7 +137,7 @@ export const Form = () => {
               {/* <span className="title educational">Educational Details</span> */}
               <div className="fields">
                 <div className="input-field">
-                  <label>College/University</label>
+                  <label>College/University*</label>
                   <input
                     type="text"
                     placeholder="Enter College/University"
@@ -146,7 +146,7 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Qualification</label>
+                  <label>Qualification*</label>
                   <input
                     type="text"
                     placeholder="SSC/HSC/Degree"
@@ -155,11 +155,12 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>CGPA</label>
+                  <label>CGPA*</label>
                   <input
                     type="number"
                     onChange={handlecgpa}
                     placeholder="Enter CGPA"
+                    required
                   />
                 </div>
                 <div className="input-field">
@@ -171,15 +172,16 @@ export const Form = () => {
                   />
                 </div>
                 <div className="input-field">
-                  <label>Graduation Year</label>
+                  <label>Graduation Year*</label>
                   <input
                     type="number"
                     onChange={handlegraduation}
                     placeholder="Enter Graduation Year"
+                    required
                   />
                 </div>
                 <div className="input-field">
-                  <label>CV/Resume</label>
+                  <label>CV/Resume*</label>
                   <input
                     id="drop_zone"
                     ondrop="dropHandler(event)"
